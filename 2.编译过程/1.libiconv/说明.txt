@@ -1,5 +1,0 @@
-1.windows请使用项目libiconv-1.15-for-windows-vs2017-project编译获取libiconv.lib libiconv.dll
-
-2.linux请直接编译libiconv-1.15.tar.gz，这里我们采取静态编译的方式获取libiconv.a  目录prefix请根据实际情况配置，示例选择不安装到系统目录
-./configure --prefix=/root/c_workspace/libiconv-1.15-static --enable-static=yes CFLAGS=-fPIC
-make && make install

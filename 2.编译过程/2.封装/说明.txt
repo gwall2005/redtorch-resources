@@ -1,0 +1,20 @@
+无论是Linux还是Windows，都需要手动
+
+添加
+#include "iconv.h"
+#include "ThostFtdcMdApi.h"
+到
+jctpmdapiv6v3v11x64_wrap.h
+
+
+添加
+#include "iconv.h"
+#include "ThostFtdcTraderApi.h"
+到
+jctptraderapiv6v3v11x64_wrap.h
+
+
+压缩包中的项目均已做此更改，文件的不同之处在于
+Windows iconv.h头文件来自项目libiconv-1.15-for-windows-vs2017-project
+Linux iconv.h头文件来自libiconv-1.15.tar.gz
+编译略有区别，但函数一致,因此之前生成的C++代码可不做其他修改
